@@ -154,22 +154,22 @@ flowchart TB
 
 Core runtime changes:
 
-- [`BtActionServer` preempt guard and terminal status flush](nav2_behavior_tree/include/nav2_behavior_tree/bt_action_server_impl.hpp)
-- [`BehaviorTreeEngine` terminal failure logging](nav2_behavior_tree/src/behavior_tree_engine.cpp)
-- [`RecoveryNode` retry diagnostics](nav2_behavior_tree/plugins/control/recovery_node.cpp)
-- [`RecoveryNode` logger member](nav2_behavior_tree/include/nav2_behavior_tree/plugins/control/recovery_node.hpp)
-- [`NavigateToPoseAction` missing-input guard](nav2_behavior_tree/plugins/action/navigate_to_pose_action.cpp)
-- [`NavigateThroughPosesAction` missing-input guard](nav2_behavior_tree/plugins/action/navigate_through_poses_action.cpp)
-- [`NavigateToPose` TF warning throttling](nav2_bt_navigator/src/navigators/navigate_to_pose.cpp)
-- [`NavigateThroughPoses` bad replacement goal handling](nav2_bt_navigator/src/navigators/navigate_through_poses.cpp)
+- [`BtActionServer` preempt guard and terminal status flush](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/include/nav2_behavior_tree/bt_action_server_impl.hpp)
+- [`BehaviorTreeEngine` terminal failure logging](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/src/behavior_tree_engine.cpp)
+- [`RecoveryNode` retry diagnostics](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/plugins/control/recovery_node.cpp)
+- [`RecoveryNode` logger member](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/include/nav2_behavior_tree/plugins/control/recovery_node.hpp)
+- [`NavigateToPoseAction` missing-input guard](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/plugins/action/navigate_to_pose_action.cpp)
+- [`NavigateThroughPosesAction` missing-input guard](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/plugins/action/navigate_through_poses_action.cpp)
+- [`NavigateToPose` TF warning throttling](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_bt_navigator/src/navigators/navigate_to_pose.cpp)
+- [`NavigateThroughPoses` bad replacement goal handling](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_bt_navigator/src/navigators/navigate_through_poses.cpp)
 
 Tests and documentation:
 
-- [`FollowPath` action failure and replacement tests](nav2_behavior_tree/test/plugins/action/test_follow_path_action.cpp)
-- [`NavigateToPoseAction` missing-input test](nav2_behavior_tree/test/plugins/action/test_navigate_to_pose_action.cpp)
-- [`NavigateThroughPosesAction` missing-input test](nav2_behavior_tree/test/plugins/action/test_navigate_through_poses_action.cpp)
-- [`NavigateThroughPoses` bad-TF preemption system test](nav2_system_tests/src/system/nav_through_poses_tester_node.py)
-- [`BT navigation failure audit`](nav2_bt_navigator/doc/bt_navigation_failure_audit.md)
+- [`FollowPath` action failure and replacement tests](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/test/plugins/action/test_follow_path_action.cpp)
+- [`NavigateToPoseAction` missing-input test](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/test/plugins/action/test_navigate_to_pose_action.cpp)
+- [`NavigateThroughPosesAction` missing-input test](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_behavior_tree/test/plugins/action/test_navigate_through_poses_action.cpp)
+- [`NavigateThroughPoses` bad-TF preemption system test](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_system_tests/src/system/nav_through_poses_tester_node.py)
+- [`BT navigation failure audit`](https://github.com/Rpirayesh/navigation2/blob/bt-navigation-failure-robustness/nav2_bt_navigator/doc/bt_navigation_failure_audit.md)
 
 ## Compatibility
 
